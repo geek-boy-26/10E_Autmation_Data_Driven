@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.qtpselenium.suiteB.Create_CaseManager">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="reportDataSetResult"/>
+          <include name="reportTestResult"/>
+          <include name="create_CaseManager" invocation-numbers="0"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_CaseManager -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

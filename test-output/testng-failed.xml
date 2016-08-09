@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite C]">
+  <listeners>
+    <listener class-name="com.qtpselenium.listener.TestsListenerAdapter"/>
+    <listener class-name="com.qtpselenium.util.ScreenshotUtility"/>
+    <listener class-name="com.qtpselenium.util.RetryListener"/>
+  </listeners>
+  <test name="Test C1(failed)">
+    <classes>
+      <class name="com.qtpselenium.suiteC.TestCase_C2">
+        <methods>
+          <include name="checkSuiteSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteC.TestCase_C2 -->
+      <class name="com.qtpselenium.suiteC.TestCase_C1">
+        <methods>
+          <include name="testcaseC1"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteC.TestCase_C1 -->
+    </classes>
+  </test> <!-- Test C1(failed) -->
+  <test name="Test C2(failed)">
+    <classes>
+      <class name="com.qtpselenium.suiteC.TestCase_C2">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="testcaseC2"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteC.TestCase_C2 -->
+    </classes>
+  </test> <!-- Test C2(failed) -->
+</suite> <!-- Failed suite [Suite C] -->

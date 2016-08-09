@@ -1,0 +1,18 @@
+Appointment creation
+==> Right click and open appointment 
+==> Enter Patient name
+==> Add department details
+==> Enter start and end time
+==> Select Visit type from the drop down OR enter text 
+
+
+
+
+
+
+
+
+
+******Issues while appointment creation*************
+No Email validation
+No Charge pay validation

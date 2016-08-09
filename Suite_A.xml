@@ -1,0 +1,54 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite A">
+<test name="Login_10E">
+    <classes>
+        <class name="com.qtpselenium.suiteA.Login_10E" ></class>  
+    </classes>
+</test>
+
+<test name="patient_lookup">
+    <classes>
+        <class name="com.qtpselenium.suiteA.patient_lookup" ></class>  
+    </classes>
+</test>
+
+<test name="New Patient">
+    <classes>
+        <class name="com.qtpselenium.suiteA.New_Patient" ></class>  
+    </classes>
+</test>
+
+<test name="New_Insurance">
+    <classes>
+        <class name="com.qtpselenium.suiteA.New_Insurance" ></class>  
+    </classes>
+</test>
+
+<test name="New_Pharma">
+    <classes>
+        <class name="com.qtpselenium.suiteA.New_Pharma" ></class>  
+    </classes>
+</test>
+
+<test name="New_Attorney">
+    <classes>
+        <class name="com.qtpselenium.suiteA.New_Attorney" ></class>  
+    </classes>
+</test>
+
+<test name="Alerts">
+    <classes>
+        <class name="com.qtpselenium.suiteA.Alerts" ></class>  
+    </classes>
+</test>
+
+
+
+<test name="Additional_information">
+    <classes>
+        <class name="com.qtpselenium.suiteA.Additional_information" ></class>  
+    </classes>
+</test>
+
+</suite>
+

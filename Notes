@@ -1,0 +1,44 @@
+
+Script name and the excel test case name should be same
+
+
+Here is a quick rundown on the differences between explicit and implicit wait:
+
+Explicit wait:
+
+documented and defined behaviour.
+runs in the local part of selenium (in the language of your code).
+works on any condition you can think of.
+returns either success or timeout error.
+can define absence of element as success condition.
+can customize delay between retries and exceptions to ignore.
+
+Implicit wait:
+
+undocumented and practically undefined behaviour.
+runs in the remote part of selenium (the part controlling the browser).
+only works on find element(s) methods.
+returns either element found or (after timeout) not found.
+if checking for absence of element must always wait until timeout.
+cannot be customized other than global timeout.
+
+
+//Patient look up existing code
+WebDriverWait wait = new WebDriverWait(driver, 40);
+	wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(OR.getProperty("patient_button")))));
+		check_element_present("patient_button");
+	//	driver.findElement(By.xpath(OR.getProperty("patient_button"))).sendKeys(Keys.ENTER);
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath(OR.getProperty("patient_button"))));
+		action.click();
+		action.build().perform();
+		driver.findElement(By.xpath(OR.getProperty("patient_button"))).sendKeys(Keys.ENTER);;
+		//click("patient_button");
+		verify_title("lookup_window", "Patient Lookup");
+		
+		//click on the button on top right hand side
+		click("new_copy");
+		Thread(2000);
+		wait_until("select_patient");
+		verify_title("select_patient", "Please select a patient and try again !");
+		click("pop_ok");

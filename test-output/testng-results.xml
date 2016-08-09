@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52567" started-at="2016-08-09T07:19:28Z" finished-at="2016-08-09T07:20:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52567" started-at="2016-08-09T07:19:28Z" finished-at="2016-08-09T07:20:20Z">
+      <class name="com.qtpselenium.suiteB.Create_CaseManager">
+        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:com.qtpselenium.suiteB.Create_CaseManager@70729a2b]" name="checkSuiteSkip" is-config="true" duration-ms="1822" started-at="2016-08-09T03:19:26Z" finished-at="2016-08-09T03:19:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSuiteSkip -->
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.qtpselenium.suiteB.Create_CaseManager@70729a2b]" name="checkTestSkip" is-config="true" duration-ms="2" started-at="2016-08-09T03:19:28Z" finished-at="2016-08-09T03:19:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestSkip -->
+        <test-method status="PASS" signature="create_CaseManager(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qtpselenium.suiteB.Create_CaseManager@70729a2b]" name="create_CaseManager" duration-ms="50458" started-at="2016-08-09T03:19:28Z" data-provider="getTestData" finished-at="2016-08-09T03:20:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Khan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dummy Data_B1_3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dummy Data_B1_4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_CaseManager -->
+        <test-method status="PASS" signature="reportDataSetResult()[pri:0, instance:com.qtpselenium.suiteB.Create_CaseManager@70729a2b]" name="reportDataSetResult" is-config="true" duration-ms="2007" started-at="2016-08-09T03:20:18Z" finished-at="2016-08-09T03:20:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportDataSetResult -->
+        <test-method status="PASS" signature="reportTestResult()[pri:0, instance:com.qtpselenium.suiteB.Create_CaseManager@70729a2b]" name="reportTestResult" is-config="true" duration-ms="88" started-at="2016-08-09T03:20:20Z" finished-at="2016-08-09T03:20:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestResult -->
+      </class> <!-- com.qtpselenium.suiteB.Create_CaseManager -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

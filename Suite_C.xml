@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite C">
+
+
+<test name="Test C1">
+    <classes>
+        <class name="com.qtpselenium.suiteC.TestCase_C1" ></class>  
+    </classes>
+</test>
+
+<test name="Test C2">
+    <classes>
+        <class name="com.qtpselenium.suiteC.TestCase_C2" ></class>  
+    </classes>
+</test>
+
+
+</suite>
+

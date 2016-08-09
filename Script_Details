@@ -1,0 +1,8 @@
+
+New Patient: This script will create new patient and add necessary details into it.
+Functions used in New Patient: 
+wait_until_element_present_to_click
+js_click
+verify_title
+write_input
+click

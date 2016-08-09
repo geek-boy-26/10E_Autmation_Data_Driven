@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite B">
+
+
+
+
+<test name="Appointment Creation">
+    <classes>
+        <class name="com.qtpselenium.suiteB.Create_Appointment" ></class>  
+    </classes>
+</test>
+
+<test name="Create_Employer">
+    <classes>
+        <class name="com.qtpselenium.suiteB.Create_Employer" ></class>  
+    </classes>
+</test>
+
+<test name="Create Guarantor">
+    <classes>
+        <class name="com.qtpselenium.suiteB.Create_Guarantors" ></class>  
+    </classes>
+</test>
+
+<test name="Create CaseManager">
+    <classes>
+        <class name="com.qtpselenium.suiteB.Create_CaseManager" ></class>  
+    </classes>
+</test>
+
+</suite>
+

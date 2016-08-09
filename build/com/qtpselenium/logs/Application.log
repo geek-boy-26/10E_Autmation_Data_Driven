@@ -1,0 +1,131 @@
+05/08/2016 09:41:15 devpinoyLogger Loading Property files
+05/08/2016 09:41:15 devpinoyLogger Loaded Property files successfully
+05/08/2016 09:41:15 devpinoyLogger Loading XLS Files
+05/08/2016 09:41:16 devpinoyLogger Loaded XLS Files successfully
+05/08/2016 09:41:16 devpinoyLogger Checking Runmode of Suite B
+05/08/2016 09:41:16 devpinoyLogger Test Starts:Appointment Creation
+05/08/2016 09:41:16 devpinoyLogger  Executing Create_Appointment
+05/08/2016 09:41:16 devpinoyLogger Dummy Data_B1_1 -- Dummy Data_B1_2 -- Dummy Data_B1_3 -- Dummy Data_B1_4
+05/08/2016 09:41:34 devpinoyLogger Waiting for Element to visible:Right_click_slot
+05/08/2016 09:41:39 devpinoyLogger Waiting for Element to visible:Appointment_creation_patient_name
+05/08/2016 09:41:42 devpinoyLogger Xpath:Appointment_creation_patient_name:Data:Aakar
+05/08/2016 09:41:44 devpinoyLogger Clicking button:Appointment_creation_patient_name_select
+05/08/2016 09:41:44 devpinoyLogger Waiting for Element to visible:Appointment_creation_patient_name_alert
+05/08/2016 09:41:45 devpinoyLogger Function called:js_click
+05/08/2016 09:41:45 devpinoyLogger Xpath:Appointment_creation_Visit_Type:Data:ANN VISIT
+05/08/2016 09:41:46 devpinoyLogger Xpath:Appointment_creation_Reason:Data:qnGVVUkxYV
+05/08/2016 09:41:46 devpinoyLogger Xpath:Appointment_creation_Diagnosis:Data:aCrdyDXiRN
+05/08/2016 09:41:46 devpinoyLogger Xpath:Appointment_creation_Billing_notes:Data:GGwFeTyGrr
+05/08/2016 09:41:46 devpinoyLogger Xpath:Appointment_creation_General_notes:Data:klxnsWZXCa
+05/08/2016 09:41:46 devpinoyLogger Function called:js_click
+05/08/2016 09:41:47 devpinoyLogger Function called:js_click
+05/08/2016 09:41:50 devpinoyLogger Clicking button:Appointment_creartion_encounter_facility
+05/08/2016 09:41:50 devpinoyLogger Waiting for Element to visible:Appointment_creartion_encounter_facility_All
+05/08/2016 09:41:50 devpinoyLogger Waiting for Element to visible
+05/08/2016 09:41:50 devpinoyLogger Clicking button:Appointment_creartion_encounter_button
+05/08/2016 09:41:50 devpinoyLogger Clicking button:Appointment_creartion_encounter_button
+05/08/2016 09:41:51 devpinoyLogger Clicking button:Appointment_creation_calender_from
+05/08/2016 09:41:51 devpinoyLogger element not foundclickAppointment_creation_calender_from
+05/08/2016 09:41:51 devpinoyLogger Clicking button:Appointment_creation_calender_to
+05/08/2016 09:41:51 devpinoyLogger Clicking button:Appointment_creartion_case
+05/08/2016 09:41:52 devpinoyLogger Clicking button:Appointment_creartion_case_ok
+05/08/2016 09:41:52 devpinoyLogger Function called:js_click
+05/08/2016 09:41:52 devpinoyLogger Function called:js_click
+05/08/2016 09:41:52 devpinoyLogger Waiting for Element to visible:Appointment_creation_view_logs_x_button
+05/08/2016 09:41:53 devpinoyLogger Clicking button:Appointment_creation_view_logs_x_button
+05/08/2016 09:41:53 devpinoyLogger Function called:js_click
+05/08/2016 09:41:54 devpinoyLogger Clicking button:Appointment_creation_view_print
+05/08/2016 09:42:00 devpinoyLogger Clicking button:Appointment_creation_view_print_close
+05/08/2016 09:42:03 devpinoyLogger Clicking button:Appointment_creation_view_print_dropdown
+05/08/2016 09:42:06 devpinoyLogger Clicking button:Appointment_creation_enc_fax
+05/08/2016 09:42:07 devpinoyLogger Xpath:Appointment_creation_enc_fax_input:Data:9102207671
+05/08/2016 09:42:07 devpinoyLogger Waiting for Element to visible
+05/08/2016 09:42:08 devpinoyLogger Function called:js_click
+05/08/2016 09:42:11 devpinoyLogger Function called:js_click
+05/08/2016 09:42:11 devpinoyLogger Function called:js_click
+05/08/2016 09:42:13 devpinoyLogger Clicking button:Appointment_creation_Find_visit
+05/08/2016 09:42:14 devpinoyLogger Clicking button:Appointment_creation_Find_Facility
+05/08/2016 09:42:14 devpinoyLogger Function called:js_click
+05/08/2016 09:42:14 devpinoyLogger Function called:js_click
+05/08/2016 09:42:14 devpinoyLogger Function called:js_click
+05/08/2016 09:42:14 devpinoyLogger Function called:js_click
+05/08/2016 09:42:15 devpinoyLogger Clicking button:Appointment_creation_Find_pro_select
+05/08/2016 09:42:15 devpinoyLogger Xpath:Appointment_creation_Find_package_name:Data:FvLrq
+05/08/2016 09:42:15 devpinoyLogger Clicking button:Appointment_creation_Find_package_name_save
+05/08/2016 09:42:16 devpinoyLogger Function called:js_click
+05/08/2016 09:42:21 devpinoyLogger Waiting for Element to visible
+05/08/2016 09:42:21 devpinoyLogger Function called:js_click
+05/08/2016 09:42:27 devpinoyLogger Function called:js_click
+05/08/2016 09:42:27 devpinoyLogger Function called:js_click
+05/08/2016 09:42:28 devpinoyLogger close browser function called:closeBrowser
+05/08/2016 09:42:29 devpinoyLogger Closing browser as test is finished
+05/08/2016 09:42:30 devpinoyLogger close browser function called:closeBrowser
+05/08/2016 09:42:30 devpinoyLogger Closing browser as test is finished
+05/08/2016 09:42:30 devpinoyLogger Test Starts:Test B2
+05/08/2016 09:42:30 devpinoyLogger  Executing Create_Employer
+05/08/2016 09:42:30 devpinoyLogger prakash -- Arizona -- New Jersy -- abc@gmaiol.com
+05/08/2016 09:42:30 devpinoyLogger Create_Employer
+05/08/2016 09:42:48 devpinoyLogger Waiting for Element to visible
+05/08/2016 09:42:49 devpinoyLogger Function called:js_click
+05/08/2016 09:42:49 devpinoyLogger Waiting for Element to visible
+05/08/2016 09:42:49 devpinoyLogger Function called:js_click
+05/08/2016 09:42:49 devpinoyLogger Waiting for Element to visible
+05/08/2016 09:42:49 devpinoyLogger Function called:js_click
+05/08/2016 09:42:49 devpinoyLogger Waiting for Element to visible
+05/08/2016 09:42:50 devpinoyLogger Function called:js_click
+05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name:Data:prakashQvbABQvbAB866
+05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_state:Data:Arizona
+05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_Address1:Data:New Jersy
+05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_Email:Data:abc@gmaiol.com
+05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_Zip:Data:QvbAB
+05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_Address2:Data:QvbABQvbAB
+05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_tel:Data:QvbAB866
+05/08/2016 09:42:51 devpinoyLogger Xpath:Employer_name_City:Data:QvbAB
+05/08/2016 09:42:51 devpinoyLogger Xpath:Employer_name_Fax:Data:866QvbAB
+05/08/2016 09:42:51 devpinoyLogger Xpath:Employer_name_Contact:Data:QvbAB
+05/08/2016 09:42:51 devpinoyLogger Xpath:Employer_name_notes:Data:QvbAB
+05/08/2016 09:42:51 devpinoyLogger Function called:js_click
+05/08/2016 09:42:51 devpinoyLogger close browser function called:closeBrowser
+05/08/2016 09:42:53 devpinoyLogger Closing browser as test is finished
+05/08/2016 09:42:53 devpinoyLogger close browser function called:closeBrowser
+05/08/2016 09:42:53 devpinoyLogger Closing browser as test is finished
+05/08/2016 09:42:53 devpinoyLogger Test Starts:Create Guarantor
+05/08/2016 09:42:53 devpinoyLogger  Executing TestCase_B1
+05/08/2016 09:42:53 devpinoyLogger John -- Ch -- Christian
+05/08/2016 09:42:53 devpinoyLogger TestCase_B2
+05/08/2016 09:43:12 devpinoyLogger Waiting for Element to visible
+05/08/2016 09:43:12 devpinoyLogger Function called:js_click
+05/08/2016 09:43:13 devpinoyLogger Waiting for Element to visible
+05/08/2016 09:43:13 devpinoyLogger Function called:js_click
+05/08/2016 09:43:13 devpinoyLogger Waiting for Element to visible
+05/08/2016 09:43:13 devpinoyLogger Function called:js_click
+05/08/2016 09:43:13 devpinoyLogger Function called:js_click
+05/08/2016 09:43:14 devpinoyLogger Waiting for Element to visible:Gaurantor_type
+05/08/2016 09:43:15 devpinoyLogger Xpath:Gaurantor_name_last:Data:hDImvJohn
+05/08/2016 09:43:15 devpinoyLogger Xpath:Gaurantor_MI:Data:hDImvCh
+05/08/2016 09:43:15 devpinoyLogger Xpath:Gaurantor_First:Data:hDImvChristian
+05/08/2016 09:43:16 devpinoyLogger Xpath:Gaurantor_date:Data:12/10/2020
+05/08/2016 09:43:16 devpinoyLogger Xpath:Gaurantor_email:Data:hDImv7015@hDImv881.com
+05/08/2016 09:43:16 devpinoyLogger Xpath:Gaurantor_SSN:Data:6997909392
+05/08/2016 09:43:16 devpinoyLogger Xpath:Gaurantor_tel:Data:6997909392
+05/08/2016 09:43:17 devpinoyLogger Function called:js_click
+05/08/2016 09:43:17 devpinoyLogger Xpath:Gaurantor_emp_add1:Data:hDImv
+05/08/2016 09:43:17 devpinoyLogger Xpath:Gaurantor_emp_add2:Data:hDImv
+05/08/2016 09:43:17 devpinoyLogger Xpath:Gaurantor_emp_city:Data:hDImv
+05/08/2016 09:43:17 devpinoyLogger Xpath:Gaurantor_emp_state:Data:AK
+05/08/2016 09:43:17 devpinoyLogger Xpath:Gaurantor_emp_zip:Data:hDImv
+05/08/2016 09:43:18 devpinoyLogger Function called:js_click
+05/08/2016 09:43:18 devpinoyLogger Xpath:Employment_tab_state:Data:AK
+05/08/2016 09:43:18 devpinoyLogger Xpath:Employment_tab_Workphone:Data:6997909392
+05/08/2016 09:43:18 devpinoyLogger close browser function called:closeBrowser
+05/08/2016 09:43:20 devpinoyLogger Closing browser as test is finished
+05/08/2016 09:43:20 devpinoyLogger close browser function called:closeBrowser
+05/08/2016 09:43:20 devpinoyLogger Closing browser as test is finished
+05/08/2016 09:43:20 devpinoyLogger Checking Runmode of Suite C
+05/08/2016 09:43:20 devpinoyLogger Skipped Suite C as the runmode was set to NO
+05/08/2016 09:43:20 devpinoyLogger Test Starts:Test C1
+05/08/2016 09:43:20 devpinoyLogger close browser function called:closeBrowser
+05/08/2016 09:43:20 devpinoyLogger Closing browser as test is finished
+05/08/2016 09:43:20 devpinoyLogger Test Starts:Test C2
+05/08/2016 09:43:20 devpinoyLogger close browser function called:closeBrowser
+05/08/2016 09:43:20 devpinoyLogger Closing browser as test is finished

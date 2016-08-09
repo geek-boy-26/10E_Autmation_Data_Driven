@@ -1,0 +1,13 @@
+<suite name="My suite">
+<listeners>
+    <listener class-name="com.qtpselenium.listener.TestsListenerAdapter" />
+    <listener class-name="com.qtpselenium.util.ScreenshotUtility"/>
+    <listener class-name="com.qtpselenium.util.RetryListener"/>
+</listeners>
+  <suite-files>
+   <!-- <suite-file path="./Suite_A.xml" /> -->
+   <suite-file path="./Suite_B.xml" />
+   <suite-file path="./Suite_C.xml" />
+  
+  </suite-files>
+</suite>

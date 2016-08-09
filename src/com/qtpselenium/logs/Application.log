@@ -1,0 +1,26 @@
+09/08/2016 03:19:27 devpinoyLogger Loading Property files
+09/08/2016 03:19:27 devpinoyLogger Loaded Property files successfully
+09/08/2016 03:19:27 devpinoyLogger Loading XLS Files
+09/08/2016 03:19:28 devpinoyLogger Loaded XLS Files successfully
+09/08/2016 03:19:28 devpinoyLogger Checking Runmode of Suite B
+09/08/2016 03:19:28 devpinoyLogger  Executing create_CaseManager
+09/08/2016 03:19:28 devpinoyLogger John -- Khan -- Dummy Data_B1_3
+09/08/2016 03:19:28 devpinoyLogger create_CaseManager
+09/08/2016 03:19:56 devpinoyLogger Waiting for Element to visible
+09/08/2016 03:19:56 devpinoyLogger Function called:js_click
+09/08/2016 03:19:56 devpinoyLogger Waiting for Element to visible
+09/08/2016 03:20:09 devpinoyLogger Function called:js_click
+09/08/2016 03:20:09 devpinoyLogger Waiting for Element to visible:navigation_bar_case_manager
+09/08/2016 03:20:09 devpinoyLogger Function called:js_click
+09/08/2016 03:20:09 devpinoyLogger Waiting for Element to visible
+09/08/2016 03:20:13 devpinoyLogger Function called:js_click
+09/08/2016 03:20:13 devpinoyLogger Xpath:Case_Manager_lname:Data:JohnVElEx
+09/08/2016 03:20:14 devpinoyLogger Xpath:Case_Manager_fname:Data:Khan
+09/08/2016 03:20:14 devpinoyLogger Xpath:Case_Manager_date:Data:08/03/1990
+09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Add1:Data:VElEx
+09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Add2:Data:VElExVElExDummy Data_B1_3
+09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Zip:Data:5864
+09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Tel:Data:123
+09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Fax:Data:6916635318
+09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Email:Data:casemanager7545@VElEx073.com
+09/08/2016 03:20:17 devpinoyLogger Function called:js_click

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite B]">
+  <listeners>
+    <listener class-name="com.qtpselenium.listener.TestsListenerAdapter"/>
+    <listener class-name="com.qtpselenium.util.ScreenshotUtility"/>
+    <listener class-name="com.qtpselenium.util.RetryListener"/>
+  </listeners>
+  <test name="Appointment Creation(failed)">
+    <classes>
+      <class name="com.qtpselenium.suiteB.Create_Employer">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Employer -->
+      <class name="com.qtpselenium.suiteB.Create_Guarantors">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Guarantors -->
+      <class name="com.qtpselenium.suiteB.Create_Appointment">
+        <methods>
+          <include name="testcaseB1"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Appointment -->
+      <class name="com.qtpselenium.suiteB.Create_CaseManager">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="reportDataSetResult"/>
+          <include name="reportTestResult"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_CaseManager -->
+    </classes>
+  </test> <!-- Appointment Creation(failed) -->
+  <test name="Create_Employer(failed)">
+    <classes>
+      <class name="com.qtpselenium.suiteB.Create_Employer">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="create_employer"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Employer -->
+      <class name="com.qtpselenium.suiteB.Create_Guarantors">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Guarantors -->
+      <class name="com.qtpselenium.suiteB.Create_Appointment">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Appointment -->
+      <class name="com.qtpselenium.suiteB.Create_CaseManager">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="reportDataSetResult"/>
+          <include name="reportTestResult"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_CaseManager -->
+    </classes>
+  </test> <!-- Create_Employer(failed) -->
+  <test name="Create Guarantor(failed)">
+    <classes>
+      <class name="com.qtpselenium.suiteB.Create_Employer">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Employer -->
+      <class name="com.qtpselenium.suiteB.Create_Guarantors">
+        <methods>
+          <include name="Guarantors"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Guarantors -->
+      <class name="com.qtpselenium.suiteB.Create_Appointment">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Appointment -->
+      <class name="com.qtpselenium.suiteB.Create_CaseManager">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="reportDataSetResult"/>
+          <include name="reportTestResult"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_CaseManager -->
+    </classes>
+  </test> <!-- Create Guarantor(failed) -->
+  <test name="Create CaseManager(failed)">
+    <classes>
+      <class name="com.qtpselenium.suiteB.Create_Employer">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Employer -->
+      <class name="com.qtpselenium.suiteB.Create_Guarantors">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Guarantors -->
+      <class name="com.qtpselenium.suiteB.Create_Appointment">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_Appointment -->
+      <class name="com.qtpselenium.suiteB.Create_CaseManager">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="reportDataSetResult"/>
+          <include name="reportTestResult"/>
+          <include name="create_CaseManager" invocation-numbers="2 3 4 5 6 7 8"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteB.Create_CaseManager -->
+    </classes>
+  </test> <!-- Create CaseManager(failed) -->
+</suite> <!-- Failed suite [Suite B] -->
