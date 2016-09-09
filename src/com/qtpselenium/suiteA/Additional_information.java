@@ -125,6 +125,7 @@ public class Additional_information extends TestSuiteBase{
 		   click("Additional_info_Residene_click_select");
 		   js_click("Additional_info_fix_date_icon");
 		   click("Additional_info_fix_date");
+		   write_input("Additional_info_fix_date", "12/12/2014");
 		   click("Additional_info_plan_type");
 		   click("Additional_info_plan_type_select");
 		   write_input("Additional_info_notes_above", str);
@@ -147,11 +148,11 @@ public class Additional_information extends TestSuiteBase{
 		   click("Additional_info_Patient_Docs");
 		   click("Additional_info_Patient_Docs_Add");
 		   
-		   Runtime.getRuntime().exec((System.getProperty("user.dir")+"/upload_doc.exe"));
+		//   Runtime.getRuntime().exec((System.getProperty("user.dir")+"/upload_doc.exe"));
 		
 		 
 		   
-		//   closeBrowser();
+	//	   closeBrowser();
 		   /****
 		    * Due to error on the local machine, this script is paused and the above code is working fine
 		    * 

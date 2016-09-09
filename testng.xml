@@ -2,10 +2,11 @@
 <listeners>
     <listener class-name="com.qtpselenium.listener.TestsListenerAdapter" />
     <listener class-name="com.qtpselenium.util.ScreenshotUtility"/>
-    <listener class-name="com.qtpselenium.util.RetryListener"/>
+    <!-- <listener class-name="com.qtpselenium.util.RetryListener"/> -->
+     <listener class-name="com.qtpselenium.listener.ExtentReporterNG" />
 </listeners>
   <suite-files>
-   <!-- <suite-file path="./Suite_A.xml" /> -->
+<!--    <suite-file path="./Suite_A.xml" /> -->
    <suite-file path="./Suite_B.xml" />
    <suite-file path="./Suite_C.xml" />
   

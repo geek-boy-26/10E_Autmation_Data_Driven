@@ -1,131 +1,221 @@
-05/08/2016 09:41:15 devpinoyLogger Loading Property files
-05/08/2016 09:41:15 devpinoyLogger Loaded Property files successfully
-05/08/2016 09:41:15 devpinoyLogger Loading XLS Files
-05/08/2016 09:41:16 devpinoyLogger Loaded XLS Files successfully
-05/08/2016 09:41:16 devpinoyLogger Checking Runmode of Suite B
-05/08/2016 09:41:16 devpinoyLogger Test Starts:Appointment Creation
-05/08/2016 09:41:16 devpinoyLogger  Executing Create_Appointment
-05/08/2016 09:41:16 devpinoyLogger Dummy Data_B1_1 -- Dummy Data_B1_2 -- Dummy Data_B1_3 -- Dummy Data_B1_4
-05/08/2016 09:41:34 devpinoyLogger Waiting for Element to visible:Right_click_slot
-05/08/2016 09:41:39 devpinoyLogger Waiting for Element to visible:Appointment_creation_patient_name
-05/08/2016 09:41:42 devpinoyLogger Xpath:Appointment_creation_patient_name:Data:Aakar
-05/08/2016 09:41:44 devpinoyLogger Clicking button:Appointment_creation_patient_name_select
-05/08/2016 09:41:44 devpinoyLogger Waiting for Element to visible:Appointment_creation_patient_name_alert
-05/08/2016 09:41:45 devpinoyLogger Function called:js_click
-05/08/2016 09:41:45 devpinoyLogger Xpath:Appointment_creation_Visit_Type:Data:ANN VISIT
-05/08/2016 09:41:46 devpinoyLogger Xpath:Appointment_creation_Reason:Data:qnGVVUkxYV
-05/08/2016 09:41:46 devpinoyLogger Xpath:Appointment_creation_Diagnosis:Data:aCrdyDXiRN
-05/08/2016 09:41:46 devpinoyLogger Xpath:Appointment_creation_Billing_notes:Data:GGwFeTyGrr
-05/08/2016 09:41:46 devpinoyLogger Xpath:Appointment_creation_General_notes:Data:klxnsWZXCa
-05/08/2016 09:41:46 devpinoyLogger Function called:js_click
-05/08/2016 09:41:47 devpinoyLogger Function called:js_click
-05/08/2016 09:41:50 devpinoyLogger Clicking button:Appointment_creartion_encounter_facility
-05/08/2016 09:41:50 devpinoyLogger Waiting for Element to visible:Appointment_creartion_encounter_facility_All
-05/08/2016 09:41:50 devpinoyLogger Waiting for Element to visible
-05/08/2016 09:41:50 devpinoyLogger Clicking button:Appointment_creartion_encounter_button
-05/08/2016 09:41:50 devpinoyLogger Clicking button:Appointment_creartion_encounter_button
-05/08/2016 09:41:51 devpinoyLogger Clicking button:Appointment_creation_calender_from
-05/08/2016 09:41:51 devpinoyLogger element not foundclickAppointment_creation_calender_from
-05/08/2016 09:41:51 devpinoyLogger Clicking button:Appointment_creation_calender_to
-05/08/2016 09:41:51 devpinoyLogger Clicking button:Appointment_creartion_case
-05/08/2016 09:41:52 devpinoyLogger Clicking button:Appointment_creartion_case_ok
-05/08/2016 09:41:52 devpinoyLogger Function called:js_click
-05/08/2016 09:41:52 devpinoyLogger Function called:js_click
-05/08/2016 09:41:52 devpinoyLogger Waiting for Element to visible:Appointment_creation_view_logs_x_button
-05/08/2016 09:41:53 devpinoyLogger Clicking button:Appointment_creation_view_logs_x_button
-05/08/2016 09:41:53 devpinoyLogger Function called:js_click
-05/08/2016 09:41:54 devpinoyLogger Clicking button:Appointment_creation_view_print
-05/08/2016 09:42:00 devpinoyLogger Clicking button:Appointment_creation_view_print_close
-05/08/2016 09:42:03 devpinoyLogger Clicking button:Appointment_creation_view_print_dropdown
-05/08/2016 09:42:06 devpinoyLogger Clicking button:Appointment_creation_enc_fax
-05/08/2016 09:42:07 devpinoyLogger Xpath:Appointment_creation_enc_fax_input:Data:9102207671
-05/08/2016 09:42:07 devpinoyLogger Waiting for Element to visible
-05/08/2016 09:42:08 devpinoyLogger Function called:js_click
-05/08/2016 09:42:11 devpinoyLogger Function called:js_click
-05/08/2016 09:42:11 devpinoyLogger Function called:js_click
-05/08/2016 09:42:13 devpinoyLogger Clicking button:Appointment_creation_Find_visit
-05/08/2016 09:42:14 devpinoyLogger Clicking button:Appointment_creation_Find_Facility
-05/08/2016 09:42:14 devpinoyLogger Function called:js_click
-05/08/2016 09:42:14 devpinoyLogger Function called:js_click
-05/08/2016 09:42:14 devpinoyLogger Function called:js_click
-05/08/2016 09:42:14 devpinoyLogger Function called:js_click
-05/08/2016 09:42:15 devpinoyLogger Clicking button:Appointment_creation_Find_pro_select
-05/08/2016 09:42:15 devpinoyLogger Xpath:Appointment_creation_Find_package_name:Data:FvLrq
-05/08/2016 09:42:15 devpinoyLogger Clicking button:Appointment_creation_Find_package_name_save
-05/08/2016 09:42:16 devpinoyLogger Function called:js_click
-05/08/2016 09:42:21 devpinoyLogger Waiting for Element to visible
-05/08/2016 09:42:21 devpinoyLogger Function called:js_click
-05/08/2016 09:42:27 devpinoyLogger Function called:js_click
-05/08/2016 09:42:27 devpinoyLogger Function called:js_click
-05/08/2016 09:42:28 devpinoyLogger close browser function called:closeBrowser
-05/08/2016 09:42:29 devpinoyLogger Closing browser as test is finished
-05/08/2016 09:42:30 devpinoyLogger close browser function called:closeBrowser
-05/08/2016 09:42:30 devpinoyLogger Closing browser as test is finished
-05/08/2016 09:42:30 devpinoyLogger Test Starts:Test B2
-05/08/2016 09:42:30 devpinoyLogger  Executing Create_Employer
-05/08/2016 09:42:30 devpinoyLogger prakash -- Arizona -- New Jersy -- abc@gmaiol.com
-05/08/2016 09:42:30 devpinoyLogger Create_Employer
-05/08/2016 09:42:48 devpinoyLogger Waiting for Element to visible
-05/08/2016 09:42:49 devpinoyLogger Function called:js_click
-05/08/2016 09:42:49 devpinoyLogger Waiting for Element to visible
-05/08/2016 09:42:49 devpinoyLogger Function called:js_click
-05/08/2016 09:42:49 devpinoyLogger Waiting for Element to visible
-05/08/2016 09:42:49 devpinoyLogger Function called:js_click
-05/08/2016 09:42:49 devpinoyLogger Waiting for Element to visible
-05/08/2016 09:42:50 devpinoyLogger Function called:js_click
-05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name:Data:prakashQvbABQvbAB866
-05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_state:Data:Arizona
-05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_Address1:Data:New Jersy
-05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_Email:Data:abc@gmaiol.com
-05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_Zip:Data:QvbAB
-05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_Address2:Data:QvbABQvbAB
-05/08/2016 09:42:50 devpinoyLogger Xpath:Employer_name_tel:Data:QvbAB866
-05/08/2016 09:42:51 devpinoyLogger Xpath:Employer_name_City:Data:QvbAB
-05/08/2016 09:42:51 devpinoyLogger Xpath:Employer_name_Fax:Data:866QvbAB
-05/08/2016 09:42:51 devpinoyLogger Xpath:Employer_name_Contact:Data:QvbAB
-05/08/2016 09:42:51 devpinoyLogger Xpath:Employer_name_notes:Data:QvbAB
-05/08/2016 09:42:51 devpinoyLogger Function called:js_click
-05/08/2016 09:42:51 devpinoyLogger close browser function called:closeBrowser
-05/08/2016 09:42:53 devpinoyLogger Closing browser as test is finished
-05/08/2016 09:42:53 devpinoyLogger close browser function called:closeBrowser
-05/08/2016 09:42:53 devpinoyLogger Closing browser as test is finished
-05/08/2016 09:42:53 devpinoyLogger Test Starts:Create Guarantor
-05/08/2016 09:42:53 devpinoyLogger  Executing TestCase_B1
-05/08/2016 09:42:53 devpinoyLogger John -- Ch -- Christian
-05/08/2016 09:42:53 devpinoyLogger TestCase_B2
-05/08/2016 09:43:12 devpinoyLogger Waiting for Element to visible
-05/08/2016 09:43:12 devpinoyLogger Function called:js_click
-05/08/2016 09:43:13 devpinoyLogger Waiting for Element to visible
-05/08/2016 09:43:13 devpinoyLogger Function called:js_click
-05/08/2016 09:43:13 devpinoyLogger Waiting for Element to visible
-05/08/2016 09:43:13 devpinoyLogger Function called:js_click
-05/08/2016 09:43:13 devpinoyLogger Function called:js_click
-05/08/2016 09:43:14 devpinoyLogger Waiting for Element to visible:Gaurantor_type
-05/08/2016 09:43:15 devpinoyLogger Xpath:Gaurantor_name_last:Data:hDImvJohn
-05/08/2016 09:43:15 devpinoyLogger Xpath:Gaurantor_MI:Data:hDImvCh
-05/08/2016 09:43:15 devpinoyLogger Xpath:Gaurantor_First:Data:hDImvChristian
-05/08/2016 09:43:16 devpinoyLogger Xpath:Gaurantor_date:Data:12/10/2020
-05/08/2016 09:43:16 devpinoyLogger Xpath:Gaurantor_email:Data:hDImv7015@hDImv881.com
-05/08/2016 09:43:16 devpinoyLogger Xpath:Gaurantor_SSN:Data:6997909392
-05/08/2016 09:43:16 devpinoyLogger Xpath:Gaurantor_tel:Data:6997909392
-05/08/2016 09:43:17 devpinoyLogger Function called:js_click
-05/08/2016 09:43:17 devpinoyLogger Xpath:Gaurantor_emp_add1:Data:hDImv
-05/08/2016 09:43:17 devpinoyLogger Xpath:Gaurantor_emp_add2:Data:hDImv
-05/08/2016 09:43:17 devpinoyLogger Xpath:Gaurantor_emp_city:Data:hDImv
-05/08/2016 09:43:17 devpinoyLogger Xpath:Gaurantor_emp_state:Data:AK
-05/08/2016 09:43:17 devpinoyLogger Xpath:Gaurantor_emp_zip:Data:hDImv
-05/08/2016 09:43:18 devpinoyLogger Function called:js_click
-05/08/2016 09:43:18 devpinoyLogger Xpath:Employment_tab_state:Data:AK
-05/08/2016 09:43:18 devpinoyLogger Xpath:Employment_tab_Workphone:Data:6997909392
-05/08/2016 09:43:18 devpinoyLogger close browser function called:closeBrowser
-05/08/2016 09:43:20 devpinoyLogger Closing browser as test is finished
-05/08/2016 09:43:20 devpinoyLogger close browser function called:closeBrowser
-05/08/2016 09:43:20 devpinoyLogger Closing browser as test is finished
-05/08/2016 09:43:20 devpinoyLogger Checking Runmode of Suite C
-05/08/2016 09:43:20 devpinoyLogger Skipped Suite C as the runmode was set to NO
-05/08/2016 09:43:20 devpinoyLogger Test Starts:Test C1
-05/08/2016 09:43:20 devpinoyLogger close browser function called:closeBrowser
-05/08/2016 09:43:20 devpinoyLogger Closing browser as test is finished
-05/08/2016 09:43:20 devpinoyLogger Test Starts:Test C2
-05/08/2016 09:43:20 devpinoyLogger close browser function called:closeBrowser
-05/08/2016 09:43:20 devpinoyLogger Closing browser as test is finished
+30/08/2016 06:29:37 devpinoyLogger Loading Property files
+30/08/2016 06:29:37 devpinoyLogger Loaded Property files successfully
+30/08/2016 06:29:37 devpinoyLogger Loading XLS Files
+30/08/2016 06:29:37 devpinoyLogger Loaded XLS Files successfully
+30/08/2016 06:29:37 devpinoyLogger Checking Runmode of Suite B
+30/08/2016 06:29:37 devpinoyLogger Test Starts:Appointment Creation
+30/08/2016 06:29:37 devpinoyLogger  Executing Create_Appointment
+30/08/2016 06:29:37 devpinoyLogger Dummy Data_B1_1 -- Dummy Data_B1_2 -- Dummy Data_B1_3 -- Dummy Data_B1_4
+30/08/2016 06:30:10 devpinoyLogger Waiting for Element to visible:Right_click_slot
+30/08/2016 06:30:39 devpinoyLogger Element unable to locate:wait_until_element_present
+30/08/2016 06:31:10 devpinoyLogger Element not foundorg.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ATLANTISPC-274', ip: '169.254.211.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: d55e67c14f8ee5003ef8c02f3640f044
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\aakarg\AppData\Local\Temp\scoped_dir11912_28424}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=52.0.2743.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+30/08/2016 06:31:16 devpinoyLogger close browser function called:closeBrowser
+30/08/2016 06:31:17 devpinoyLogger Closing browser as test is finished
+30/08/2016 06:31:18 devpinoyLogger close browser function called:closeBrowser
+30/08/2016 06:31:18 devpinoyLogger Closing browser as test is finished
+30/08/2016 06:31:18 devpinoyLogger Test Starts:Create_Employer
+30/08/2016 06:31:18 devpinoyLogger  Executing Create_Employer
+30/08/2016 06:31:18 devpinoyLogger prakash -- Arizona -- New Jersy -- abc@gmaiol.com
+30/08/2016 06:31:18 devpinoyLogger Create_Employer
+30/08/2016 06:31:38 devpinoyLogger Waiting for Element to visible
+30/08/2016 06:31:45 devpinoyLogger Function called:js_click
+30/08/2016 06:31:46 devpinoyLogger Waiting for Element to visible
+30/08/2016 06:31:46 devpinoyLogger Function called:js_click
+30/08/2016 06:31:46 devpinoyLogger Waiting for Element to visible
+30/08/2016 06:31:46 devpinoyLogger Function called:js_click
+30/08/2016 06:31:46 devpinoyLogger Waiting for Element to visible
+30/08/2016 06:31:48 devpinoyLogger Function called:js_click
+30/08/2016 06:31:48 devpinoyLogger Xpath:Employer_name:Data:prakashumdHuumdHu818
+30/08/2016 06:31:48 devpinoyLogger Xpath:Employer_name_state:Data:Arizona
+30/08/2016 06:31:48 devpinoyLogger Xpath:Employer_name_Address1:Data:New Jersy
+30/08/2016 06:31:48 devpinoyLogger Xpath:Employer_name_Email:Data:abc@gmaiol.com
+30/08/2016 06:31:49 devpinoyLogger Xpath:Employer_name_Zip:Data:umdHu
+30/08/2016 06:31:49 devpinoyLogger Xpath:Employer_name_Address2:Data:umdHuumdHu
+30/08/2016 06:31:49 devpinoyLogger Xpath:Employer_name_tel:Data:umdHu818
+30/08/2016 06:31:49 devpinoyLogger Xpath:Employer_name_City:Data:umdHu
+30/08/2016 06:31:49 devpinoyLogger Xpath:Employer_name_Fax:Data:818umdHu
+30/08/2016 06:31:49 devpinoyLogger Xpath:Employer_name_Contact:Data:umdHu
+30/08/2016 06:31:49 devpinoyLogger Xpath:Employer_name_notes:Data:umdHu
+30/08/2016 06:31:49 devpinoyLogger Function called:js_click
+30/08/2016 06:31:50 devpinoyLogger close browser function called:closeBrowser
+30/08/2016 06:31:52 devpinoyLogger Closing browser as test is finished
+30/08/2016 06:31:53 devpinoyLogger close browser function called:closeBrowser
+30/08/2016 06:31:53 devpinoyLogger Closing browser as test is finished
+30/08/2016 06:31:53 devpinoyLogger Test Starts:Create Guarantor
+30/08/2016 06:31:53 devpinoyLogger  Executing Guarantors
+30/08/2016 06:31:53 devpinoyLogger John -- Ch -- Christian
+30/08/2016 06:31:53 devpinoyLogger Guarantors
+30/08/2016 06:32:15 devpinoyLogger Waiting for Element to visible
+30/08/2016 06:32:16 devpinoyLogger Function called:js_click
+30/08/2016 06:32:16 devpinoyLogger Waiting for Element to visible
+30/08/2016 06:32:16 devpinoyLogger Function called:js_click
+30/08/2016 06:32:16 devpinoyLogger Waiting for Element to visible
+30/08/2016 06:32:16 devpinoyLogger Function called:js_click
+30/08/2016 06:32:16 devpinoyLogger Function called:js_click
+30/08/2016 06:32:17 devpinoyLogger Waiting for Element to visible:Gaurantor_type
+30/08/2016 06:32:18 devpinoyLogger Xpath:Gaurantor_name_last:Data:LtxKoJohn
+30/08/2016 06:32:18 devpinoyLogger Xpath:Gaurantor_MI:Data:LtxKoCh
+30/08/2016 06:32:19 devpinoyLogger Xpath:Gaurantor_First:Data:LtxKoChristian
+30/08/2016 06:32:19 devpinoyLogger Xpath:Gaurantor_date:Data:12/10/2020
+30/08/2016 06:32:19 devpinoyLogger Xpath:Gaurantor_email:Data:LtxKo415@LtxKo813.com
+30/08/2016 06:32:19 devpinoyLogger Xpath:Gaurantor_SSN:Data:1466938007
+30/08/2016 06:32:19 devpinoyLogger Xpath:Gaurantor_tel:Data:1466938007
+30/08/2016 06:32:20 devpinoyLogger Function called:js_click
+30/08/2016 06:32:20 devpinoyLogger Xpath:Gaurantor_emp_add1:Data:LtxKo
+30/08/2016 06:32:20 devpinoyLogger Xpath:Gaurantor_emp_add2:Data:LtxKo
+30/08/2016 06:32:20 devpinoyLogger Xpath:Gaurantor_emp_city:Data:LtxKo
+30/08/2016 06:32:20 devpinoyLogger Xpath:Gaurantor_emp_state:Data:AK
+30/08/2016 06:32:20 devpinoyLogger Xpath:Gaurantor_emp_zip:Data:LtxKo
+30/08/2016 06:32:20 devpinoyLogger Function called:js_click
+30/08/2016 06:32:20 devpinoyLogger Xpath:Employment_tab_state:Data:AK
+30/08/2016 06:32:20 devpinoyLogger Xpath:Employment_tab_Workphone:Data:1466938007
+30/08/2016 06:32:20 devpinoyLogger Function called:js_click
+30/08/2016 06:32:21 devpinoyLogger close browser function called:closeBrowser
+30/08/2016 06:32:23 devpinoyLogger Closing browser as test is finished
+30/08/2016 06:32:23 devpinoyLogger close browser function called:closeBrowser
+30/08/2016 06:32:23 devpinoyLogger Closing browser as test is finished
+30/08/2016 06:32:23 devpinoyLogger Test Starts:Create CaseManager
+30/08/2016 06:32:23 devpinoyLogger  Executing create_CaseManager
+30/08/2016 06:32:23 devpinoyLogger John -- Khan -- Dummy Data_B1_3
+30/08/2016 06:32:23 devpinoyLogger create_CaseManager
+30/08/2016 06:32:41 devpinoyLogger Waiting for Element to visible
+30/08/2016 06:32:54 devpinoyLogger Function called:js_click
+30/08/2016 06:32:55 devpinoyLogger Waiting for Element to visible
+30/08/2016 06:32:55 devpinoyLogger Function called:js_click
+30/08/2016 06:32:55 devpinoyLogger Waiting for Element to visible:navigation_bar_case_manager
+30/08/2016 06:32:55 devpinoyLogger Function called:js_click
+30/08/2016 06:32:55 devpinoyLogger Waiting for Element to visible
+30/08/2016 06:33:15 devpinoyLogger Element unable to locate:wait_until_element_present_to_click:Case_Manager_new
+30/08/2016 06:33:15 devpinoyLogger Function called:js_click
+30/08/2016 06:33:45 devpinoyLogger element not found:js_click:Case_Manager_new
+30/08/2016 06:33:45 devpinoyLogger Xpath:Case_Manager_lname:Data:JohnHDSFG
+30/08/2016 06:33:50 devpinoyLogger Unable to insert text into element:Case_Manager_lname
+30/08/2016 06:33:50 devpinoyLogger Exception:org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ATLANTISPC-274', ip: '169.254.211.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: e2effe85a1e94fcfa870f3edaea4406a
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\aakarg\AppData\Local\Temp\scoped_dir19308_17166}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=52.0.2743.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+30/08/2016 06:33:50 devpinoyLogger Xpath:Case_Manager_fname:Data:Khan
+30/08/2016 06:33:55 devpinoyLogger Unable to insert text into element:Case_Manager_fname
+30/08/2016 06:33:55 devpinoyLogger Exception:org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ATLANTISPC-274', ip: '169.254.211.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: e2effe85a1e94fcfa870f3edaea4406a
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\aakarg\AppData\Local\Temp\scoped_dir19308_17166}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=52.0.2743.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+30/08/2016 06:33:55 devpinoyLogger Xpath:Case_Manager_date:Data:08/03/1990
+30/08/2016 06:34:00 devpinoyLogger Unable to insert text into element:Case_Manager_date
+30/08/2016 06:34:00 devpinoyLogger Exception:org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ATLANTISPC-274', ip: '169.254.211.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: e2effe85a1e94fcfa870f3edaea4406a
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\aakarg\AppData\Local\Temp\scoped_dir19308_17166}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=52.0.2743.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+30/08/2016 06:34:00 devpinoyLogger Xpath:Case_Manager_Add1:Data:HDSFG
+30/08/2016 06:34:05 devpinoyLogger Unable to insert text into element:Case_Manager_Add1
+30/08/2016 06:34:05 devpinoyLogger Exception:org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ATLANTISPC-274', ip: '169.254.211.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: e2effe85a1e94fcfa870f3edaea4406a
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\aakarg\AppData\Local\Temp\scoped_dir19308_17166}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=52.0.2743.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+30/08/2016 06:34:05 devpinoyLogger Xpath:Case_Manager_Add2:Data:HDSFGHDSFGDummy Data_B1_3
+30/08/2016 06:34:11 devpinoyLogger Unable to insert text into element:Case_Manager_Add2
+30/08/2016 06:34:11 devpinoyLogger Exception:org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ATLANTISPC-274', ip: '169.254.211.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: e2effe85a1e94fcfa870f3edaea4406a
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\aakarg\AppData\Local\Temp\scoped_dir19308_17166}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=52.0.2743.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+30/08/2016 06:34:11 devpinoyLogger Xpath:Case_Manager_Zip:Data:5864
+30/08/2016 06:34:16 devpinoyLogger Unable to insert text into element:Case_Manager_Zip
+30/08/2016 06:34:16 devpinoyLogger Exception:org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ATLANTISPC-274', ip: '169.254.211.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: e2effe85a1e94fcfa870f3edaea4406a
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\aakarg\AppData\Local\Temp\scoped_dir19308_17166}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=52.0.2743.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+30/08/2016 06:34:16 devpinoyLogger Xpath:Case_Manager_Tel:Data:1466938007
+30/08/2016 06:34:21 devpinoyLogger Unable to insert text into element:Case_Manager_Tel
+30/08/2016 06:34:21 devpinoyLogger Exception:org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ATLANTISPC-274', ip: '169.254.211.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: e2effe85a1e94fcfa870f3edaea4406a
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\aakarg\AppData\Local\Temp\scoped_dir19308_17166}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=52.0.2743.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+30/08/2016 06:34:21 devpinoyLogger Xpath:Case_Manager_Fax:Data:1466938007
+30/08/2016 06:34:26 devpinoyLogger Unable to insert text into element:Case_Manager_Fax
+30/08/2016 06:34:26 devpinoyLogger Exception:org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ATLANTISPC-274', ip: '169.254.211.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: e2effe85a1e94fcfa870f3edaea4406a
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\aakarg\AppData\Local\Temp\scoped_dir19308_17166}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=52.0.2743.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+30/08/2016 06:34:26 devpinoyLogger Xpath:Case_Manager_Email:Data:casemanager2669@HDSFG798.com
+30/08/2016 06:34:31 devpinoyLogger Unable to insert text into element:Case_Manager_Email
+30/08/2016 06:34:31 devpinoyLogger Exception:org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'ATLANTISPC-274', ip: '169.254.211.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: e2effe85a1e94fcfa870f3edaea4406a
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\aakarg\AppData\Local\Temp\scoped_dir19308_17166}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=52.0.2743.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+30/08/2016 06:34:31 devpinoyLogger Function called:js_click
+30/08/2016 06:35:03 devpinoyLogger element not found:js_click:Case_Manager_OK
+30/08/2016 06:35:04 devpinoyLogger close browser function called:closeBrowser
+30/08/2016 06:35:05 devpinoyLogger Closing browser as test is finished
+30/08/2016 06:35:05 devpinoyLogger close browser function called:closeBrowser
+30/08/2016 06:35:05 devpinoyLogger Closing browser as test is finished
+30/08/2016 06:35:05 devpinoyLogger Checking Runmode of Suite C
+30/08/2016 06:35:05 devpinoyLogger Skipped Suite C as the runmode was set to NO
+30/08/2016 06:35:05 devpinoyLogger Test Starts:Test C1
+30/08/2016 06:35:06 devpinoyLogger close browser function called:closeBrowser
+30/08/2016 06:35:06 devpinoyLogger Closing browser as test is finished
+30/08/2016 06:35:06 devpinoyLogger Test Starts:Test C2
+30/08/2016 06:35:06 devpinoyLogger close browser function called:closeBrowser
+30/08/2016 06:35:06 devpinoyLogger Closing browser as test is finished

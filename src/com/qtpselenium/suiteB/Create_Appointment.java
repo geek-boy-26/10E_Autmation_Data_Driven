@@ -20,9 +20,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import atu.testrecorder.exceptions.ATUTestRecorderException;
-
 import com.qtpselenium.util.ErrorUtil;
 import com.qtpselenium.util.TestUtil;
 
@@ -37,7 +34,7 @@ public class Create_Appointment extends TestSuiteBase{
 	static boolean isTestPass=true;
 	// Runmode of test case in a suite
 			@BeforeTest
-			public void checkTestSkip() throws ATUTestRecorderException{
+			public void checkTestSkip() {
 			
 				if(!TestUtil.isTestCaseRunnable(suiteBxls,this.getClass().getSimpleName())){
 					APP_LOGS.debug("Skipping Test Case"+this.getClass().getSimpleName()+" as runmode set to NO");//logs
@@ -47,7 +44,7 @@ public class Create_Appointment extends TestSuiteBase{
 
 			}
 	@Test(dataProvider="getTestData")
-	public void testcaseB1(
+	public void create_Appointment(
 								String col1,
 								String col2,
 								String col3,
@@ -81,7 +78,7 @@ public class Create_Appointment extends TestSuiteBase{
 		
 		wait_until_element_present("Appointment_creation_patient_name");
 		write_input("Appointment_creation_patient_name", "Aakar");
-		click("Appointment_creation_patient_name_select");
+		js_click("Appointment_creation_patient_name_select");
 		
 					
 		wait_until_element_present("Appointment_creation_patient_name_alert");
@@ -101,26 +98,27 @@ public class Create_Appointment extends TestSuiteBase{
 	
 		driver.findElement(By.xpath(OR.getProperty("Appointment_creation_resourcename"))).sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
 		Thread.sleep(2000);
-		click("Appointment_creartion_encounter_facility");
+		js_click("Appointment_creartion_encounter_facility");
 		wait_until_element_present("Appointment_creartion_encounter_facility_All");
 		driver.findElement(By.xpath(OR.getProperty("Appointment_creartion_encounter_facility"))).sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
 		
 		
 		//click("Appointment_creartion_encounter_facility_All");
-		
+		Robot r = new Robot();
 		
 		
 		wait_until_element_present_to_click("Appointment_creartion_encounter_button");
 		click("Appointment_creartion_encounter_button");
-		
 		Select select = new Select(driver.findElement(By.xpath(OR.getProperty("Appointment_creartion_encounter_button"))));
 		select.selectByValue("0");
-		click("Appointment_creartion_encounter_button");
+		js_click("Appointment_creartion_encounter_button");
 		
 	/**Check the opening of calender by clicking on calender button*/
 
-		click("Appointment_creation_calender_from");
-		click("Appointment_creation_calender_to");
+		js_click("Appointment_creation_calender_from");
+		js_click("Appointment_creation_calender_to");
+		r.keyPress(java.awt.event.KeyEvent.VK_ESCAPE);
+		r.keyRelease(java.awt.event.KeyEvent.VK_ESCAPE);
 		
 	/**
 	 * Diagnosis not working ICD-9 8175
@@ -134,32 +132,31 @@ public class Create_Appointment extends TestSuiteBase{
 		 * 
 		 */
 		 
-		click("Appointment_creartion_case");
-		click("Appointment_creartion_case_ok");
+		js_click("Appointment_creartion_case");
+		js_click("Appointment_creartion_case_ok");
 		
 		js_click("Appointment_creation_enc_select_patient");
 		
 		js_click("Appointment_creation_view_logs");
 		wait_until_element_present("Appointment_creation_view_logs_x_button");
-		click("Appointment_creation_view_logs_x_button");
+		js_click("Appointment_creation_view_logs_x_button");
 		js_click("Appointment_creation_view");
-		click("Appointment_creation_view_print");
+		js_click("Appointment_creation_view_print");
 	
-		
-		Robot r = new Robot();
+	
 		r.delay(3000);
 
 		r.keyPress(java.awt.event.KeyEvent.VK_ESCAPE);
-		r.keyRelease(java.awt.event.KeyEvent.VK_ESCAPE);;
+		r.keyRelease(java.awt.event.KeyEvent.VK_ESCAPE);
 		r.delay(3000);
-		click("Appointment_creation_view_print_close");
+		js_click("Appointment_creation_view_print_close");
 		r.delay(3000);		
-		click("Appointment_creation_view_print_dropdown");
+		js_click("Appointment_creation_view_print_dropdown");
 		r.delay(3000);
 		r.keyPress(java.awt.event.KeyEvent.VK_ESCAPE);
-		r.keyRelease(java.awt.event.KeyEvent.VK_ESCAPE);;
+		r.keyRelease(java.awt.event.KeyEvent.VK_ESCAPE);
 				
-		click("Appointment_creation_enc_fax");
+		js_click("Appointment_creation_enc_fax");
 		write_input("Appointment_creation_enc_fax_input", RandomStringUtils.randomNumeric(10));
 		wait_until_element_present_to_click("Appointment_creation_send_fax");
 		js_click("Appointment_creation_send_fax");
@@ -173,29 +170,28 @@ public class Create_Appointment extends TestSuiteBase{
 		 * */
 		
 		js_click("Appointment_creation_Find_open");
-		click("Appointment_creation_Find_visit");
+		js_click("Appointment_creation_Find_visit");
 		driver.findElement(By.xpath(OR.getProperty("Appointment_creation_Find_visit"))).sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
 	
-		/*click("Appointment_creation_Find_reason");
-		write_input("Appointment_creation_Find_reason", "testing purpose");
-		*/
+		js_click("Appointment_creation_Reason");
+		write_input("Appointment_creation_Reason", "testing purpose");
+		
 		
 		driver.findElement(By.xpath(OR.getProperty("Appointment_creation_Find_visit"))).sendKeys(Keys.TAB,str);
-		click("Appointment_creation_Find_Facility");
+		js_click("Appointment_creation_Find_Facility");
 		js_click("Appointment_creation_Find_Facility_all");
 		js_click("Appointment_creation_Find_pro_res");
 		js_click("Appointment_creation_Find_pro_res_all");
 		js_click("Appointment_creation_Find_pro_res_all_rule");
-		click("Appointment_creation_Find_pro_select");
+		js_click("Appointment_creation_Find_pro_select");
 		driver.findElement(By.xpath(OR.getProperty("Appointment_creation_Find_pro_select"))).sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
 		
 		String handle = driver.getWindowHandle();
 		
 		write_input("Appointment_creation_Find_package_name", str);
-		click("Appointment_creation_Find_package_name_save");
+		js_click("Appointment_creation_Find_package_name_save");
 		//action.keyDown(Keys.ESCAPE).perform();
-			
-		//Robot r = new Robot();
+	
 		r.delay(1000);
 		r.keyPress(java.awt.event.KeyEvent.VK_ESCAPE);
 		r.keyRelease(java.awt.event.KeyEvent.VK_ESCAPE);
@@ -225,47 +221,23 @@ public class Create_Appointment extends TestSuiteBase{
 			//	js_click("Appointment_creation_Find_info");
 	//		js_click("Close_new_x");
 	//		js_click("Close_Anyway");
-		
-		
-		
-	
-		
-		
-			
-//		js_click("Appointment_creation_Multiple_Appt_close");
-	
-
-		
-/*		wait_until_element_present_to_click("Appointment_creation_info");
+		//		js_click("Appointment_creation_Multiple_Appt_close");
+	/*		wait_until_element_present_to_click("Appointment_creation_info");
 		click("Appointment_creation_info");
 		click("Close_new_x");
 		js_click("Close_Anyway");*/
-		
-		
-		
-	/*	Thread.sleep(2000);
+		/*	Thread.sleep(2000);
 		driver.findElement(By.xpath(OR.getProperty("Appointment_creation_Find_package_name_save"))).sendKeys(Keys.ESCAPE);
 	*/	
-	
-	
-		
-		//dropdown_select("Appointment_creation_Find_pro_select", 1);
-		
+			//dropdown_select("Appointment_creation_Find_pro_select", 1);
 		/*WebElement reason = driver.findElement(By.xpath(OR.getProperty("Appointment_creation_Find_reason")));
 		action.click();
 		action.contextClick(reason).sendKeys(Keys.TAB);
 		*/		
 		//click("Appointment_creation_Find_select");
-		
 		//click("Appointment_creation_Find_info");
-	
-		
-	
-		
 		//click("Appointment_creation_Facility");
-		
-		
-		/***After checking all the buttons click on OK button ***/
+			/***After checking all the buttons click on OK button ***/
 	//	click("Appointment_creation_ok");
 		/*driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //Thread.sleep(3000);
@@ -273,7 +245,6 @@ public class Create_Appointment extends TestSuiteBase{
 		{
 		String read = driver.findElement(By.xpath(OR.getProperty("Appointment_creation_not_working_hours"))).getText();
 		System.out.println(read);
-			
 		}*/
 	 	}
 	 	catch(UnhandledAlertException alert)
@@ -315,7 +286,7 @@ public class Create_Appointment extends TestSuiteBase{
 	
 	
 	@AfterTest
-	public void reportTestResult() throws ATUTestRecorderException{
+	public void reportTestResult()  {
 		if(isTestPass)
 			TestUtil.reportDataSetResult(suiteBxls, "Test Cases", TestUtil.getRowNum(suiteBxls,this.getClass().getSimpleName()), "PASS");
 		else

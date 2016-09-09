@@ -9,54 +9,44 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
-import org.monte.screenrecorder.ScreenRecorder;
-//import org.apache.xmlbeans.impl.xb.xmlconfig.ConfigDocument.Config;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.WebDriver.Options;
-//import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.Augmenter;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
-//import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-//import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 import org.testng.asserts.SoftAssert;
 
-import atu.testrecorder.ATUTestRecorder;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
-
 import com.qtpselenium.util.ErrorUtil;
-import com.qtpselenium.util.TestRecorder;
 import com.qtpselenium.util.Xls_Reader;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 
 
 public class TestBase {
@@ -72,7 +62,6 @@ public class TestBase {
 	public static boolean isBrowserOpened = false; //if exceute test in 1 browser
 	public static boolean browser_alive=false;
 	public static WebDriver driver;
-	public static ATUTestRecorder recorder;
 	public String str = RandomStringUtils.randomAlphabetic(5);
 	public String integer = RandomStringUtils.randomNumeric(3);
 	public static String ten_num = RandomStringUtils.randomNumeric(10);
@@ -80,7 +69,8 @@ public class TestBase {
 	public JavascriptExecutor js=(JavascriptExecutor) driver;
 	public static int  Screenshot_counter = 0;
 	public static Robot r;
-	
+	public static ExtentTest test_extent_log;
+	public static ExtentReports extent_reports;
 	// initializing the Tests
 	public static void initialize() throws Exception{
 		// logs
@@ -91,7 +81,8 @@ public class TestBase {
 		config = new Properties();
 		FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+"//src//com//qtpselenium//config/config.properties");
 		config.load(ip);
-			
+		
+	
 		OR = new Properties();
 		ip = new FileInputStream(System.getProperty("user.dir")+"//src//com//qtpselenium//config/OR.properties");
 		OR.load(ip);
@@ -116,20 +107,7 @@ public class TestBase {
 		
 	}
 	
-		public void capturevideo(ITestResult result, String status)
-		{
-			String Method = result.getMethod().getRealClass().getSimpleName() + "." + result.getMethod().getMethodName();
-			Date date = new Date();
-			DateFormat dateFormat = new SimpleDateFormat("yy-MM-dd HH-mm-ss");
-			try {
-				recorder = new ATUTestRecorder("D:\\Aakar\\10E_Selenium_automation\\10E_Autmation_Data_Driven\\ScriptVideos\\",Method+dateFormat.format(date),false);
-				
-			} catch (ATUTestRecorderException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-	}
+		
 	
 	
 	//Assertions 
@@ -162,14 +140,25 @@ public class TestBase {
 			else if(config.getProperty("browserType").equals("Chrome"))
 				{
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//driver//chromedriver.exe");
+				System.setProperty("webdriver.chrome.logfile", "D:\\Aakar\\10E_Selenium_automation\\10E_Autmation_Data_Driven\\debug.log");
 				ChromeOptions chromeOptions = new ChromeOptions();
+				chromeOptions.addArguments("chrome.switches","--disable-extensions");
 				chromeOptions.addArguments(Arrays.asList("--test-type"));
 				DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 				capabilities.setCapability("chrome.switches", Arrays.asList("--incognito"));
 				capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 				driver = new ChromeDriver(capabilities);
-				
+							
 				}
+			else if(config.getProperty("browserType").equals("Phantom"))
+			{
+				Capabilities caps = new DesiredCapabilities();
+                ((DesiredCapabilities) caps).setJavascriptEnabled(true);                
+                ((DesiredCapabilities) caps).setCapability("takesScreenshot", true);  
+                ((DesiredCapabilities) caps).setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,"D:/Aakar/Softwares/phantomjs-2.0.0-windows/bin/phantomjs.exe");
+                driver = new  PhantomJSDriver(caps);
+                driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);  
+			}
 			driver.manage().window().maximize();
 			isBrowserOpened=true;
 			String wait_Time= config.getProperty("default_implicit");
@@ -277,19 +266,19 @@ public class TestBase {
 		
 		public static void click(String xpath)
 		{
-			WebElement ele1 = (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR.getProperty(xpath))));
 			try
-			{ 	
+			{
+				WebElement ele1 = (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR.getProperty(xpath))));	
 				APP_LOGS.debug("Clicking button"+":"+xpath );
+				test_extent_log.log(LogStatus.INFO, "Clicking button"+":"+xpath);
 				if(driver.findElements(By.xpath(OR.getProperty(xpath))).size() != 0)
 				driver.findElement(By.xpath(OR.getProperty(xpath))).click();
 						
 			}
 			catch(Exception e)
 			{
-				APP_LOGS.debug("element not found"+get_current_method_name()+xpath);
+				APP_LOGS.debug("element not found"+":"+"Method Name"+":"+get_current_method_name()+":"+"Xpath"+" "+xpath);
 				softAssert.fail("element not found", e);
-				
 			}
 		}
 		
@@ -298,7 +287,7 @@ public class TestBase {
 			try
 			{
 				APP_LOGS.debug("Selecting dropdown");
-				WebElement ele1 = (new WebDriverWait(driver, 50)).until(ExpectedConditions.visibilityOfElementLocated(By.id(OR.getProperty(xpath))));
+				WebElement ele1 = (new WebDriverWait(driver, 25)).until(ExpectedConditions.visibilityOfElementLocated(By.id(OR.getProperty(xpath))));
 				System.out.println(ele1.isDisplayed());
 				WebElement ele = driver.findElement(By.id(OR.getProperty(xpath)));
 				JavascriptExecutor exe = (JavascriptExecutor)driver;
@@ -385,7 +374,7 @@ public class TestBase {
 	}catch(Exception e)
 	{
 		ErrorUtil.addVerificationFailure(e);
-		Assert.fail("Logout button not found"+":" +get_current_method_name());
+		softAssert.fail("Logout button not found"+":" +get_current_method_name());
 	}
 		}
 		
@@ -421,9 +410,11 @@ public class TestBase {
 			}
 			catch(Exception e)
 			{
-				APP_LOGS.debug("Unable to insert text into element"+":"+e);
+				APP_LOGS.debug("Unable to insert text into element"+":"+xpath);
+				APP_LOGS.debug("Exception"+":"+e);
 				softAssert.fail("Text not written");
 			}
+			
 			
 		}
 		
@@ -481,7 +472,7 @@ public boolean verify_title(String xpath,String expected)
 	
 	try
 	{
-		WebElement ele = (new WebDriverWait(driver, 15)).until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(xpath))));
+		WebElement ele = (new WebDriverWait(driver, 25)).until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(xpath))));
 		String actual = driver.findElement(By.xpath(OR.getProperty(xpath))).getText();
 		Assert.assertTrue(actual.contains(expected), "true");
 		APP_LOGS.debug("Title Verified"+":"+"Actual"+":"+actual+":"+"Expected"+":"+expected);
@@ -490,8 +481,7 @@ public boolean verify_title(String xpath,String expected)
 	{
 		ErrorUtil.addVerificationFailure(t);
 		APP_LOGS.debug("Unable to verify title"+":" +get_current_method_name());
-		softAssert.fail("Title not match");
-		//Assert.fail("Title not matching");
+		Assert.fail("Title not matching");
 		return false;
 	}
 	
@@ -557,7 +547,7 @@ public static void custom_alert()
 
 public void js_click(String locator)
 {
-	APP_LOGS.debug("Function called"+":" +get_current_method_name());
+	APP_LOGS.debug("Function called"+":" +get_current_method_name()+":"+"Locator"+":"+locator);
 	/****
 	 * Below is the syntax to check if the element is present on the DOM of a page and visible. 
 	 * Visibility means that the element is not just displayed but also should also has a height and width that is greater than 0.** */
@@ -594,7 +584,7 @@ public void js_click_id(String locator)
 	try
 	{ 			
 		driver.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
-		WebElement ele1 = (new WebDriverWait(driver, 50)).until(ExpectedConditions.elementToBeClickable(By.id(OR.getProperty(locator))));
+		WebElement ele1 = (new WebDriverWait(driver, 25)).until(ExpectedConditions.elementToBeClickable(By.id(OR.getProperty(locator))));
 		if(ele1.isDisplayed())
 		{
 		JavascriptExecutor exe = (JavascriptExecutor)driver;
@@ -689,6 +679,7 @@ public void Navigation_file()
 		js_click("Navigation_bar");
 		wait_until_element_present_to_click("Navigation_bar_menu");
 		js_click("Navigation_bar_menu");
+		
 }
 
 public String random_mail(String mail)
@@ -713,6 +704,27 @@ public static void select(String xpath, int i)
 		obj.selectByIndex(i);
 }
 
+public static void select(String xpath, String value)
+{
+	try
+	{
+		APP_LOGS.debug("Select method with"+"xpath"+":"+xpath +" "+"Value"+":"+value);
+		Select obj = new Select(driver.findElement(By.xpath(OR.getProperty(xpath))));
+		obj.selectByVisibleText(value);
+	}
+	catch(ElementNotVisibleException e)
+	{
+		APP_LOGS.debug("Execption"+":"+e);
+	}
+		
+}
+
+public String get_name(String xpath){
+	
+String name=	driver.findElement(By.xpath(OR.getProperty(xpath))).getAttribute("value");
+	
+	return name;
+}
 
 		//close browser and not reopen
 		public void quitbrowser()

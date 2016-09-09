@@ -129,6 +129,23 @@
     <artifactId>activation</artifactId>
     <version>1.1.1</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+<dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.40.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.codeborne/phantomjsdriver -->
+<dependency>
+    <groupId>com.codeborne</groupId>
+    <artifactId>phantomjsdriver</artifactId>
+    <version>1.2.1</version>
+</dependency>
+
+
+
+
+
 
     </dependencies>
 	

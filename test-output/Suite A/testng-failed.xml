@@ -4,31 +4,10 @@
   <listeners>
     <listener class-name="com.qtpselenium.listener.TestsListenerAdapter"/>
     <listener class-name="com.qtpselenium.util.ScreenshotUtility"/>
-    <listener class-name="com.qtpselenium.util.RetryListener"/>
+    <listener class-name="com.qtpselenium.listener.ExtentReporterNG"/>
   </listeners>
   <test name="Login_10E(failed)">
     <classes>
-      <class name="com.qtpselenium.suiteA.patient_lookup">
-        <methods>
-          <include name="checkTestSkip"/>
-          <include name="reportTestResult"/>
-          <include name="reportDataSetResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.patient_lookup -->
-      <class name="com.qtpselenium.suiteA.New_Patient">
-        <methods>
-          <include name="checkTestSkip"/>
-          <include name="reportDataSetResult"/>
-          <include name="reportTestResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.New_Patient -->
-      <class name="com.qtpselenium.suiteA.Alerts">
-        <methods>
-          <include name="reportTestResult"/>
-          <include name="checkTestSkip"/>
-          <include name="reportDataSetResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.Alerts -->
       <class name="com.qtpselenium.suiteA.New_Attorney">
         <methods>
           <include name="checkTestSkip"/>
@@ -36,13 +15,28 @@
           <include name="reportDataSetResult"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.New_Attorney -->
-      <class name="com.qtpselenium.suiteA.New_Insurance">
+      <class name="com.qtpselenium.suiteA.New_Patient">
         <methods>
-          <include name="reportDataSetResult"/>
           <include name="checkTestSkip"/>
+          <include name="reportDataSetResult"/>
           <include name="reportTestResult"/>
         </methods>
-      </class> <!-- com.qtpselenium.suiteA.New_Insurance -->
+      </class> <!-- com.qtpselenium.suiteA.New_Patient -->
+      <class name="com.qtpselenium.suiteA.Login_10E">
+        <methods>
+          <include name="login_10E" invocation-numbers="0 2 3"/>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+          <include name="reportDataSetResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.Login_10E -->
+      <class name="com.qtpselenium.suiteA.patient_lookup">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+          <include name="reportDataSetResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.patient_lookup -->
       <class name="com.qtpselenium.suiteA.New_Pharma">
         <methods>
           <include name="reportTestResult"/>
@@ -50,14 +44,20 @@
           <include name="checkTestSkip"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.New_Pharma -->
-      <class name="com.qtpselenium.suiteA.Login_10E">
+      <class name="com.qtpselenium.suiteA.Alerts">
         <methods>
+          <include name="reportTestResult"/>
+          <include name="checkTestSkip"/>
+          <include name="reportDataSetResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.Alerts -->
+      <class name="com.qtpselenium.suiteA.New_Insurance">
+        <methods>
+          <include name="reportDataSetResult"/>
           <include name="checkTestSkip"/>
           <include name="reportTestResult"/>
-          <include name="reportDataSetResult"/>
-          <include name="testcaseA1" invocation-numbers="0 2 3"/>
         </methods>
-      </class> <!-- com.qtpselenium.suiteA.Login_10E -->
+      </class> <!-- com.qtpselenium.suiteA.New_Insurance -->
       <class name="com.qtpselenium.suiteA.Additional_information">
         <methods>
           <include name="checkSuiteSkip"/>
@@ -70,6 +70,27 @@
   </test> <!-- Login_10E(failed) -->
   <test name="patient_lookup(failed)">
     <classes>
+      <class name="com.qtpselenium.suiteA.New_Attorney">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+          <include name="reportDataSetResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.New_Attorney -->
+      <class name="com.qtpselenium.suiteA.New_Patient">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="reportDataSetResult"/>
+          <include name="reportTestResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.New_Patient -->
+      <class name="com.qtpselenium.suiteA.Login_10E">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+          <include name="reportDataSetResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.Login_10E -->
       <class name="com.qtpselenium.suiteA.patient_lookup">
         <methods>
           <include name="Patient_lookup" invocation-numbers="1"/>
@@ -78,34 +99,6 @@
           <include name="reportDataSetResult"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.patient_lookup -->
-      <class name="com.qtpselenium.suiteA.New_Patient">
-        <methods>
-          <include name="checkTestSkip"/>
-          <include name="reportDataSetResult"/>
-          <include name="reportTestResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.New_Patient -->
-      <class name="com.qtpselenium.suiteA.Alerts">
-        <methods>
-          <include name="reportTestResult"/>
-          <include name="checkTestSkip"/>
-          <include name="reportDataSetResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.Alerts -->
-      <class name="com.qtpselenium.suiteA.New_Attorney">
-        <methods>
-          <include name="checkTestSkip"/>
-          <include name="reportTestResult"/>
-          <include name="reportDataSetResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.New_Attorney -->
-      <class name="com.qtpselenium.suiteA.New_Insurance">
-        <methods>
-          <include name="reportDataSetResult"/>
-          <include name="checkTestSkip"/>
-          <include name="reportTestResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.New_Insurance -->
       <class name="com.qtpselenium.suiteA.New_Pharma">
         <methods>
           <include name="reportTestResult"/>
@@ -113,13 +106,20 @@
           <include name="checkTestSkip"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.New_Pharma -->
-      <class name="com.qtpselenium.suiteA.Login_10E">
+      <class name="com.qtpselenium.suiteA.Alerts">
         <methods>
-          <include name="checkTestSkip"/>
           <include name="reportTestResult"/>
+          <include name="checkTestSkip"/>
           <include name="reportDataSetResult"/>
         </methods>
-      </class> <!-- com.qtpselenium.suiteA.Login_10E -->
+      </class> <!-- com.qtpselenium.suiteA.Alerts -->
+      <class name="com.qtpselenium.suiteA.New_Insurance">
+        <methods>
+          <include name="reportDataSetResult"/>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.New_Insurance -->
       <class name="com.qtpselenium.suiteA.Additional_information">
         <methods>
           <include name="checkSuiteSkip"/>
@@ -132,28 +132,6 @@
   </test> <!-- patient_lookup(failed) -->
   <test name="New Patient(failed)">
     <classes>
-      <class name="com.qtpselenium.suiteA.patient_lookup">
-        <methods>
-          <include name="checkTestSkip"/>
-          <include name="reportTestResult"/>
-          <include name="reportDataSetResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.patient_lookup -->
-      <class name="com.qtpselenium.suiteA.New_Patient">
-        <methods>
-          <include name="checkTestSkip"/>
-          <include name="reportDataSetResult"/>
-          <include name="reportTestResult"/>
-          <include name="new_Patient" invocation-numbers="0 1 3"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.New_Patient -->
-      <class name="com.qtpselenium.suiteA.Alerts">
-        <methods>
-          <include name="reportTestResult"/>
-          <include name="checkTestSkip"/>
-          <include name="reportDataSetResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.Alerts -->
       <class name="com.qtpselenium.suiteA.New_Attorney">
         <methods>
           <include name="checkTestSkip"/>
@@ -161,20 +139,14 @@
           <include name="reportDataSetResult"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.New_Attorney -->
-      <class name="com.qtpselenium.suiteA.New_Insurance">
+      <class name="com.qtpselenium.suiteA.New_Patient">
         <methods>
-          <include name="reportDataSetResult"/>
           <include name="checkTestSkip"/>
-          <include name="reportTestResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.New_Insurance -->
-      <class name="com.qtpselenium.suiteA.New_Pharma">
-        <methods>
-          <include name="reportTestResult"/>
           <include name="reportDataSetResult"/>
-          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+          <include name="new_Patient" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- com.qtpselenium.suiteA.New_Pharma -->
+      </class> <!-- com.qtpselenium.suiteA.New_Patient -->
       <class name="com.qtpselenium.suiteA.Login_10E">
         <methods>
           <include name="checkTestSkip"/>
@@ -182,6 +154,34 @@
           <include name="reportDataSetResult"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.Login_10E -->
+      <class name="com.qtpselenium.suiteA.patient_lookup">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+          <include name="reportDataSetResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.patient_lookup -->
+      <class name="com.qtpselenium.suiteA.New_Pharma">
+        <methods>
+          <include name="reportTestResult"/>
+          <include name="reportDataSetResult"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.New_Pharma -->
+      <class name="com.qtpselenium.suiteA.Alerts">
+        <methods>
+          <include name="reportTestResult"/>
+          <include name="checkTestSkip"/>
+          <include name="reportDataSetResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.Alerts -->
+      <class name="com.qtpselenium.suiteA.New_Insurance">
+        <methods>
+          <include name="reportDataSetResult"/>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.New_Insurance -->
       <class name="com.qtpselenium.suiteA.Additional_information">
         <methods>
           <include name="checkSuiteSkip"/>
@@ -192,29 +192,8 @@
       </class> <!-- com.qtpselenium.suiteA.Additional_information -->
     </classes>
   </test> <!-- New Patient(failed) -->
-  <test name="Additional_information(failed)">
+  <test name="New_Pharma(failed)">
     <classes>
-      <class name="com.qtpselenium.suiteA.patient_lookup">
-        <methods>
-          <include name="checkTestSkip"/>
-          <include name="reportTestResult"/>
-          <include name="reportDataSetResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.patient_lookup -->
-      <class name="com.qtpselenium.suiteA.New_Patient">
-        <methods>
-          <include name="checkTestSkip"/>
-          <include name="reportDataSetResult"/>
-          <include name="reportTestResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.New_Patient -->
-      <class name="com.qtpselenium.suiteA.Alerts">
-        <methods>
-          <include name="reportTestResult"/>
-          <include name="checkTestSkip"/>
-          <include name="reportDataSetResult"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.Alerts -->
       <class name="com.qtpselenium.suiteA.New_Attorney">
         <methods>
           <include name="checkTestSkip"/>
@@ -222,20 +201,13 @@
           <include name="reportDataSetResult"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.New_Attorney -->
-      <class name="com.qtpselenium.suiteA.New_Insurance">
+      <class name="com.qtpselenium.suiteA.New_Patient">
         <methods>
-          <include name="reportDataSetResult"/>
           <include name="checkTestSkip"/>
+          <include name="reportDataSetResult"/>
           <include name="reportTestResult"/>
         </methods>
-      </class> <!-- com.qtpselenium.suiteA.New_Insurance -->
-      <class name="com.qtpselenium.suiteA.New_Pharma">
-        <methods>
-          <include name="reportTestResult"/>
-          <include name="reportDataSetResult"/>
-          <include name="checkTestSkip"/>
-        </methods>
-      </class> <!-- com.qtpselenium.suiteA.New_Pharma -->
+      </class> <!-- com.qtpselenium.suiteA.New_Patient -->
       <class name="com.qtpselenium.suiteA.Login_10E">
         <methods>
           <include name="checkTestSkip"/>
@@ -243,15 +215,43 @@
           <include name="reportDataSetResult"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.Login_10E -->
+      <class name="com.qtpselenium.suiteA.patient_lookup">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+          <include name="reportDataSetResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.patient_lookup -->
+      <class name="com.qtpselenium.suiteA.New_Pharma">
+        <methods>
+          <include name="reportTestResult"/>
+          <include name="reportDataSetResult"/>
+          <include name="new_Pharma" invocation-numbers="0"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.New_Pharma -->
+      <class name="com.qtpselenium.suiteA.Alerts">
+        <methods>
+          <include name="reportTestResult"/>
+          <include name="checkTestSkip"/>
+          <include name="reportDataSetResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.Alerts -->
+      <class name="com.qtpselenium.suiteA.New_Insurance">
+        <methods>
+          <include name="reportDataSetResult"/>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suiteA.New_Insurance -->
       <class name="com.qtpselenium.suiteA.Additional_information">
         <methods>
           <include name="checkSuiteSkip"/>
           <include name="checkTestSkip"/>
-          <include name="additional_information" invocation-numbers="0 0 0"/>
           <include name="reportDataSetResult"/>
           <include name="reportTestResult"/>
         </methods>
       </class> <!-- com.qtpselenium.suiteA.Additional_information -->
     </classes>
-  </test> <!-- Additional_information(failed) -->
+  </test> <!-- New_Pharma(failed) -->
 </suite> <!-- Failed suite [Suite A] -->

@@ -18,9 +18,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import atu.testrecorder.exceptions.ATUTestRecorderException;
-
 import com.qtpselenium.base.TestBase;
 import com.qtpselenium.util.ErrorUtil;
 import com.qtpselenium.util.TestUtil;
@@ -55,9 +52,9 @@ public class Create_Guarantors extends TestSuiteBase{
 			skip=true;
 			throw new SkipException("Runmode for test set data set to no "+count);
 		}
-		APP_LOGS.debug(" Executing TestCase_B1");
+		APP_LOGS.debug(" Executing Guarantors");
 		APP_LOGS.debug(col1 +" -- "+col2 +" -- "+col3);
-		APP_LOGS.debug("TestCase_B2");
+		APP_LOGS.debug("Guarantors");
 		
 		
 		try{
@@ -99,7 +96,7 @@ public class Create_Guarantors extends TestSuiteBase{
  			write_input("Employment_tab_state", "AK");
  			write_input("Employment_tab_Workphone", ten_num);
  			
- 			//js_click("Guarantor_ok");
+ 			js_click("Guarantor_ok");
  			
 		}
 		catch(Exception e)
@@ -121,6 +118,7 @@ public class Create_Guarantors extends TestSuiteBase{
 	else if(fail){
 		isTestPass=false;
 		TestUtil.reportDataSetResult(suiteBxls, this.getClass().getSimpleName(), count+2, "FAIL");
+		
 		}
 	else
 		TestUtil.reportDataSetResult(suiteBxls, this.getClass().getSimpleName(), count+2, "PASS");
@@ -133,7 +131,7 @@ public class Create_Guarantors extends TestSuiteBase{
 
 
 @AfterTest
-public void reportTestResult() throws ATUTestRecorderException{
+public void reportTestResult() {
 	if(isTestPass)
 		TestUtil.reportDataSetResult(suiteBxls, "Test Cases", TestUtil.getRowNum(suiteBxls,this.getClass().getSimpleName()), "PASS");
 		

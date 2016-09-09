@@ -11,9 +11,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import atu.testrecorder.exceptions.ATUTestRecorderException;
-
 import com.qtpselenium.util.ErrorUtil;
 import com.qtpselenium.util.TestUtil;
 import com.qtpselenium.util.Xls_Reader;
@@ -78,7 +75,7 @@ public class Create_CaseManager extends TestSuiteBase{
 		 			write_input("Case_Manager_Add1", str);
 		 			write_input("Case_Manager_Add2", str+str+col3);
 		 			write_input("Case_Manager_Zip", "5864");
-		 			write_input("Case_Manager_Tel", "123"); //It does not take ten digit as of now (8th August)
+		 			write_input("Case_Manager_Tel", ten_num); 
 		 			write_input("Case_Manager_Fax", ten_num);
 		 			write_input("Case_Manager_Email", random_mail("casemanager"));
 		 			js_click("Case_Manager_OK");
@@ -118,7 +115,7 @@ public class Create_CaseManager extends TestSuiteBase{
 
 
 @AfterTest
-public void reportTestResult() throws ATUTestRecorderException{
+public void reportTestResult() {
 	if(isTestPass)
 		TestUtil.reportDataSetResult(suiteBxls, "Test Cases", TestUtil.getRowNum(suiteBxls,this.getClass().getSimpleName()), "PASS");
 		

@@ -152,7 +152,6 @@ public class New_Pharma extends TestSuiteBase{
 	
 		ErrorUtil.addVerificationFailure(t);
 		fail=true;
-		capturescreenshot(this.getClass().getSimpleName()+"_"+count);
 		Assert.fail("Unable to proceed ahead", t);
 	}
 		

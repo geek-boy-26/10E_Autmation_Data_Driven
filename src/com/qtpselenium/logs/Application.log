@@ -1,26 +1,27 @@
-09/08/2016 03:19:27 devpinoyLogger Loading Property files
-09/08/2016 03:19:27 devpinoyLogger Loaded Property files successfully
-09/08/2016 03:19:27 devpinoyLogger Loading XLS Files
-09/08/2016 03:19:28 devpinoyLogger Loaded XLS Files successfully
-09/08/2016 03:19:28 devpinoyLogger Checking Runmode of Suite B
-09/08/2016 03:19:28 devpinoyLogger  Executing create_CaseManager
-09/08/2016 03:19:28 devpinoyLogger John -- Khan -- Dummy Data_B1_3
-09/08/2016 03:19:28 devpinoyLogger create_CaseManager
-09/08/2016 03:19:56 devpinoyLogger Waiting for Element to visible
-09/08/2016 03:19:56 devpinoyLogger Function called:js_click
-09/08/2016 03:19:56 devpinoyLogger Waiting for Element to visible
-09/08/2016 03:20:09 devpinoyLogger Function called:js_click
-09/08/2016 03:20:09 devpinoyLogger Waiting for Element to visible:navigation_bar_case_manager
-09/08/2016 03:20:09 devpinoyLogger Function called:js_click
-09/08/2016 03:20:09 devpinoyLogger Waiting for Element to visible
-09/08/2016 03:20:13 devpinoyLogger Function called:js_click
-09/08/2016 03:20:13 devpinoyLogger Xpath:Case_Manager_lname:Data:JohnVElEx
-09/08/2016 03:20:14 devpinoyLogger Xpath:Case_Manager_fname:Data:Khan
-09/08/2016 03:20:14 devpinoyLogger Xpath:Case_Manager_date:Data:08/03/1990
-09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Add1:Data:VElEx
-09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Add2:Data:VElExVElExDummy Data_B1_3
-09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Zip:Data:5864
-09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Tel:Data:123
-09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Fax:Data:6916635318
-09/08/2016 03:20:16 devpinoyLogger Xpath:Case_Manager_Email:Data:casemanager7545@VElEx073.com
-09/08/2016 03:20:17 devpinoyLogger Function called:js_click
+07/09/2016 10:59:00 devpinoyLogger Loading Property files
+07/09/2016 10:59:00 devpinoyLogger Loaded Property files successfully
+07/09/2016 10:59:00 devpinoyLogger Loading XLS Files
+07/09/2016 10:59:01 devpinoyLogger Loaded XLS Files successfully
+07/09/2016 10:59:01 devpinoyLogger Checking Runmode of Suite B
+07/09/2016 10:59:01 devpinoyLogger  Executing create_LabCompany
+07/09/2016 10:59:01 devpinoyLogger Test -- Test -- Test
+07/09/2016 10:59:01 devpinoyLogger create_LabCompany
+07/09/2016 10:59:21 devpinoyLogger Waiting for Element to visible
+07/09/2016 10:59:22 devpinoyLogger Function called:js_click:Locator:Navigation_bar
+07/09/2016 10:59:22 devpinoyLogger Waiting for Element to visible
+07/09/2016 10:59:32 devpinoyLogger Function called:js_click:Locator:Navigation_bar_menu
+07/09/2016 10:59:32 devpinoyLogger Waiting for Element to visible
+07/09/2016 10:59:32 devpinoyLogger Function called:js_click:Locator:Navigation_bar_menu_Lab_Company
+07/09/2016 10:59:32 devpinoyLogger Waiting for Element to visible
+07/09/2016 10:59:35 devpinoyLogger Function called:js_click:Locator:Lab_Company_new
+07/09/2016 10:59:35 devpinoyLogger Xpath:Lab_Company_name:Data:ewskU
+07/09/2016 10:59:36 devpinoyLogger Xpath:Lab_Company_Add1:Data:ewskU
+07/09/2016 10:59:36 devpinoyLogger Xpath:Lab_Company_Add2:Data:ewskU
+07/09/2016 10:59:36 devpinoyLogger Xpath:Lab_Company_city:Data:ewskU
+07/09/2016 10:59:36 devpinoyLogger Xpath:Lab_Company_zip:Data:ewskU
+07/09/2016 10:59:37 devpinoyLogger Xpath:Lab_Company_phone:Data:4676974830
+07/09/2016 10:59:37 devpinoyLogger Xpath:Lab_Company_fax:Data:ewskU
+07/09/2016 10:59:37 devpinoyLogger Xpath:Lab_Company_email:Data:ewskU
+07/09/2016 10:59:37 devpinoyLogger Function called:js_click:Locator:Lab_Company_Conf_lables
+07/09/2016 10:59:37 devpinoyLogger Function called:js_click:Locator:Lab_Company_ok
+07/09/2016 10:59:38 devpinoyLogger Xpath:Lab_Company_search:Data:ewskU

@@ -52,8 +52,6 @@
 	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/netty-3.5.7.Final.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/operadriver-1.5.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/pdfbox-app-1.8.10.jar"/>
-	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/phantomjsdriver-1.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/phantomjsdriver-1.2.1.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/poi-3.11-20141221.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/poi-examples-3.11-20141221.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/poi-excelant-3.11-20141221.jar"/>
@@ -87,5 +85,6 @@
 	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/monte-cc.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/jai_core.jar"/>
 	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/jmf.jar"/>
+	<classpathentry kind="lib" path="D:/Aakar/10E_Selenium_automation/10E_Autmation_Data_Driven/jars/extentreports-2.40.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

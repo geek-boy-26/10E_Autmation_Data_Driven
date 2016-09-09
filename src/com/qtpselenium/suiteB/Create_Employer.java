@@ -12,9 +12,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import atu.testrecorder.exceptions.ATUTestRecorderException;
-
 import com.qtpselenium.util.ErrorUtil;
 import com.qtpselenium.util.TestUtil;
 
@@ -118,7 +115,7 @@ public class Create_Employer extends TestSuiteBase{
 
 
 @AfterTest
-public void reportTestResult() throws ATUTestRecorderException{
+public void reportTestResult() {
 	if(isTestPass)
 		TestUtil.reportDataSetResult(suiteBxls, "Test Cases", TestUtil.getRowNum(suiteBxls,this.getClass().getSimpleName()), "PASS");
 	else
